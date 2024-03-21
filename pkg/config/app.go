@@ -10,7 +10,7 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("postgressss", "postgres://postgres@localhost:5432/bookstore?sslmode=disable")
+	d, err := gorm.Open("postgres", "postgres://postgres@localhost:5432/bookstore?sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
